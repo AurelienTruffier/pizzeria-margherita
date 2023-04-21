@@ -2,7 +2,8 @@
     <nav class="nav_bar">
         <img :src="logo" alt="" id="logo">
         <div class="buttons_container" :class="{active: menu}">
-            <NavButton title="Notre carte" url="#"></NavButton>
+            <NavButton title="Accueil" url="/"></NavButton>
+            <NavButton title="Notre carte" url="/menu"></NavButton>
             <NavButton title="Notre pizzeria" url="#"></NavButton>
             <NavButton title="Nous contacter" url="#"></NavButton>
         </div>
@@ -37,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 $bg-color: rgb(140, 30, 30);
 .nav_bar{
+    z-index: 10000;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -65,11 +67,14 @@ $bg-color: rgb(140, 30, 30);
         position: absolute;
         top: 75px;
         width: 100%;
+        padding-bottom: 8px;
         background-color: $bg-color;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .nav_bar{
         .buttons_container{
             display: none;
