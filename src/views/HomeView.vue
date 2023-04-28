@@ -38,15 +38,20 @@ $title_color: #ffffff;
     .title_container{
     transform: translateY(-50px);
     text-align: center;
+      
+      h1, h2{
+        color: $title_color;
+      }
     
       h1{
-      font-size: 8.5rem;
+        font-size: 8.5rem;
         padding: 6px;
-        color: $title_color;
+        -webkit-text-stroke: black 1.6px;
       }
 
       h2{
         font-size: 2.5rem;
+        -webkit-text-stroke: black .6px;
         color: $title_color;
       }
     }
@@ -61,11 +66,13 @@ $title_color: #ffffff;
           font-size: 3.5rem;
           padding: 6px;
           color: $title_color;
+          -webkit-text-stroke: black .8px;
         }
 
         h2{
           font-size: 2rem;
           color: $title_color;
+          -webkit-text-stroke: black .3px;
         }
       }
     }
@@ -80,11 +87,13 @@ $title_color: #ffffff;
           font-size: 2.5rem;
           padding: 6px;
           color: $title_color;
+          -webkit-text-stroke: black .5px;
         }
 
         h2{
           font-size: 1.6rem;
           color: $title_color;
+          -webkit-text-stroke: black .3px;
         }
       }
     }
