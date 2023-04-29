@@ -53,7 +53,7 @@ export default createStore({
         vegetarien: false
       },
       {
-        name: "Vegétarienne",
+        name: "Végétarienne",
         ingredients: "Sauce tomate, champignons, oignon, poivron, persil...",
         classique: "13,90",
         grande: "17,50",
@@ -63,41 +63,119 @@ export default createStore({
     dessertMenu:[
       {
         name: "Panna cotta",
-        description: "Dessert traditionnel italien à base de crème, lait, sucre et gélatine. Servi avec un coulis de caramel.",
-        price: "5,20",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        description: "Dessert traditionnel italien à base de crème, lait, sucre et gélatine. Servi avec un coulis de caramel ou de fraise.",
+        price: "5,60",
+        image: "pexels-pixabay-302468.jpg"
       },
       {
-        name: "Crème brûlée",
-        description: "Dessert à base de jaune d'oeufs, de sucre, de crème, de vanille et de caramel",
-        price: "5,20",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        name: "Tartelette aux pommes",
+        description: "Tartelette aux pommes à l'ancienne, cuite au four.",
+        price: "6,20",
+        image: "pexels-polina-tankilevitch-5419108.jpg"
       },
       {
-        name: "Flamenkuche Nutella-Banane",
-        description: "Tarte flambée recouverte de Nutella et de banane.",
-        price: "6,50",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        name: "Brownies au chocolat",
+        description: "Gâteau au chocolat moelleux, cuit au four. Servi avec sa boule de glace vanille artisanale.",
+        price: "5,80",
+        image: "pexels-dana-tentis-683499.jpg",
       },
       {
-        name: "Boule de glace artisanale",
-        description: "Saveur vanille, chocolat, café ou spéculoos.",
-        price: "4,60",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        name: "Boules de glaces artisanales",
+        description: "3 boules, saveur vanille, fraise, chocolat, café ou spéculoos.",
+        price: "4,80",
+        image: "pexels-manuel-mouzo-13350513.jpg"
       },
       {
         name: "Mousse au chocolat",
         description: "Mousse au chocolat noir accompagné d'une sauce au caramel au beurre salé.",
         price: "5,20",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      },
-      {
-        name: "Irish Coffee",
-        description: "Cocktail chaud à base de café, de sucre roux, de crème chantilly et de whisky.",
-        price: "6,80",
-        image: "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      },
-    ]
+        image: "pexels-ella-olsson-3026810.jpg"
+      }
+    ],
+    boissonMenu:{
+      softs:[
+        {
+          name: 'Coca-Cola 33cl',
+          price: "3,60"
+        },
+        {
+          name: 'Lipton Ice Tea 33cl',
+          price: "3,60"
+        },
+        {
+          name: 'Oasis Tropical 33cl',
+          price: "3,60"
+        },
+        {
+          name: 'Orangina 33cl',
+          price: "3,60"
+        },
+        {
+          name: 'Schweppes 33cl',
+          price: "3,60"
+        },
+        {
+          name: 'San Pellegrinno 50cl',
+          price: "3,40"
+        }
+      ],
+      cocktails:[
+        {
+          name: 'Piña Colada',
+          description: "Rhum, jus d'ananas, lait de coco",
+          price: '6,60'
+        },
+        {
+          name: 'Mojito',
+          description: "Rhum, limonade, citron vert, sucre de canne, feuilles de menthe ",
+          price: '6,60'
+        },
+        {
+          name: 'Rouge Passion',
+          description: "Vodka, fraise, fruit de la passion, mangue, sirop de banane",
+          price: '6,60'
+        },
+        {
+          name: 'Gin Tonic',
+          description: "Gin, Schweppes, citron",
+          price: '6,60'
+        },
+      ],
+      bieres:[
+        {
+          name: 'Grimbergen 33cl',
+          price: '5,90'
+        },
+        {
+          name: 'Grimbergen rouge 33cl',
+          price: '5,90'
+        }
+      ],
+      vins:[
+
+      ],
+      aperitifs:[
+
+      ],
+      chaudes:[
+        {
+          name: "Café",
+          price: "1,90"
+        },
+        {
+          name: "Thé",
+          price: "2,30"
+        },
+        {
+          name: "Cappuccino",
+          price: "3,30"
+        },
+        {
+          name: "Irish Coffee",
+          price: "6,80"
+        },
+      ]
+    }
   },
   getters: {
   },

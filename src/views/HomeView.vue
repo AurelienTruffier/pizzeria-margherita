@@ -23,7 +23,7 @@ export default {
 $title_color: #ffffff;
 .home{
   height: calc(100vh - 75px - 50px);
-  background-image: url('../../public/ressources/alan-hardman-SU1LFoeEUkk-unsplash.jpg');
+  background-image: url('../../public/ressources/pexels-narda-yescas-1566836.jpg');
   background-size: cover;
   background-position: center;
 
@@ -46,12 +46,12 @@ $title_color: #ffffff;
       h1{
         font-size: 8.5rem;
         padding: 6px;
-        -webkit-text-stroke: black 1.6px;
+        // -webkit-text-stroke: black 1.6px;
       }
 
       h2{
         font-size: 2.5rem;
-        -webkit-text-stroke: black .6px;
+        // -webkit-text-stroke: black .6px;
         color: $title_color;
       }
     }
@@ -66,13 +66,13 @@ $title_color: #ffffff;
           font-size: 3.5rem;
           padding: 6px;
           color: $title_color;
-          -webkit-text-stroke: black .8px;
+          // -webkit-text-stroke: black .8px;
         }
 
         h2{
           font-size: 2rem;
           color: $title_color;
-          -webkit-text-stroke: black .3px;
+          // -webkit-text-stroke: black .3px;
         }
       }
     }
@@ -87,13 +87,13 @@ $title_color: #ffffff;
           font-size: 2.5rem;
           padding: 6px;
           color: $title_color;
-          -webkit-text-stroke: black .5px;
+          // -webkit-text-stroke: black .5px;
         }
 
         h2{
           font-size: 1.6rem;
           color: $title_color;
-          -webkit-text-stroke: black .3px;
+          // -webkit-text-stroke: black .3px;
         }
       }
     }

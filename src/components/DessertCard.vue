@@ -12,7 +12,7 @@
           <p>{{ dessert.price }} €</p>
         </div>
         <div class="image_container">
-          <img :src="dessert.image" alt="">
+          <img :src="require(`../../public/ressources/desserts/${dessert.image}`)" alt="">
         </div>
       </div>
     </div>
@@ -139,7 +139,6 @@ $dessert-name-color: rgb(0, 60, 30);
       }
       .image_container{
       width: 37%;
-
       img{
         width: 95%;
       }

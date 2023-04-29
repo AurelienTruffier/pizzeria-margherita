@@ -4,7 +4,7 @@
     <div class="menu_container">
       <PizzaCard v-if="this.selected=='pizza'" title="Nos pizzas"></PizzaCard>
       <DessertCard v-if="this.selected=='dessert'" title="Nos desserts"></DessertCard>
-      <!-- <MenuCard v-if="this.selected=='boisson'" title="Nos boissons"></MenuCard> -->
+      <BoissonCard v-if="this.selected=='boisson'" title="Nos boissons"></BoissonCard>
     </div>
   </div>
 </template>
@@ -13,13 +13,15 @@
 import CategoriesRow from '@/components/CategoriesRow.vue';
 import PizzaCard from '@/components/PizzaCard.vue';
 import DessertCard from '@/components/DessertCard.vue';
+import BoissonCard from '@/components/BoissonCard.vue';
 
 export default {
   name: 'MenuView',
   components: {
     CategoriesRow,
     PizzaCard,
-    DessertCard
+    DessertCard,
+    BoissonCard
   },
   data(){
     return{
