@@ -94,6 +94,11 @@ $dessert-name-color: rgb(0, 60, 30);
       img{
         width: 85%;
         border-radius: 3px;
+        transition: transform 0.1s ease-in-out;
+      }
+
+      img:hover{
+        transform: scale(1.02);
       }
     }
   }
@@ -112,6 +117,11 @@ $dessert-name-color: rgb(0, 60, 30);
       .price_container{
         p{
           font-size: 2.2rem;
+        }
+      }
+      .image_container{
+        img:hover{
+          transform: none;
         }
       }
     }

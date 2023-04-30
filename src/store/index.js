@@ -77,7 +77,7 @@ export default createStore({
         name: "Brownies au chocolat",
         description: "Gâteau au chocolat moelleux, cuit au four. Servi avec sa boule de glace vanille artisanale.",
         price: "5,80",
-        image: "pexels-dana-tentis-683499.jpg",
+        image: "pexels-dana-tentis-683499.jpg"
       },
       {
         name: "Boules de glaces artisanales",
@@ -139,7 +139,7 @@ export default createStore({
           name: 'Gin Tonic',
           description: "Gin, Schweppes, citron",
           price: '6,60'
-        },
+        }
       ],
       bieres:[
         {
@@ -152,10 +152,33 @@ export default createStore({
         }
       ],
       vins:[
+        {
+          name: "Rouge Côtes du Rhône 75cl",
+          price: "18,60"
 
+        },
+        {
+          name: "Rosé Côtes de Provence 75cl",
+          price: "22,60"
+        }
       ],
       aperitifs:[
-
+        {
+          name: "Rhum blanc impérial St James 4cl",
+          price: "5,60"
+        },
+        {
+          name: "Jack Daniel’s 4cl",
+          price: "6,60"
+        },
+        {
+          name: "Porto 6cl",
+          price: "5,60"
+        },
+        {
+          name: "Ricard 2cl",
+          price: "3,80"
+        }
       ],
       chaudes:[
         {
@@ -173,7 +196,7 @@ export default createStore({
         {
           name: "Irish Coffee",
           price: "6,80"
-        },
+        }
       ]
     }
   },

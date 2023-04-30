@@ -4,8 +4,8 @@
         <div class="buttons_container" :class="{active: menu}">
             <NavButton title="Accueil" url="/"></NavButton>
             <NavButton title="Notre carte" url="/menu"></NavButton>
-            <NavButton title="Notre pizzeria" url="#"></NavButton>
-            <NavButton title="Nous contacter" url="#"></NavButton>
+            <NavButton title="Notre pizzeria" url="/pizzeria"></NavButton>
+            <NavButton title="Nous contacter" url="/contact"></NavButton>
         </div>
         <img src="ressources/menu.png" alt="Bouton du menu" id="burger_btn" @click="ShowMenu">
     </nav>
