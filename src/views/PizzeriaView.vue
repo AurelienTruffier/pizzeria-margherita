@@ -41,7 +41,7 @@ $title_color: #ffffff;
 $description-background-color: rgba(230, 225, 190, 0.8);
 
 .pizzeria{
-  height: auto;
+  height: calc(100vh - 75px - 50px);
   min-height: calc(100vh - 75px - 50px);
   background-image: url('../../public/ressources/pexels-max-avans-5056625.jpg');
   background-size: cover;
@@ -54,32 +54,45 @@ $description-background-color: rgba(230, 225, 190, 0.8);
     height: 100%;
     backdrop-filter: blur(1px);
     .title_container{
-      padding: 32px 0;
+      padding: 8px 0 16px 0;
       text-align: center;
       h2{
-        font-size: 6rem;
+        font-size: 5rem;
         color: $title_color;
       }
     }
     .description_container{
-      padding: 18px;
+      display: flex;
+      width: 80%;
+      height: 33%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 12px 24px;
       border-radius: 12px;
       background-color: $description-background-color;
       p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
     .horaire_container{
-      margin-top: 18px;
-      padding: 18px;
+      display: flex;
+      width: 80%;
+      height: 30%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: space-around;
+      margin: 0 auto;
+      margin-top: 12px;
+      padding: 12px;
       border-radius: 12px;
       background-color: $description-background-color;
       .title_container{
-        height: 30px;
+        height: 20px;
         h3{
-          font-size: 3.2rem;
+          font-size: 2.5rem;
           text-align: center;
-          line-height: 40px;
+          line-height: 20px;
         }
       }
       .hours_container{
@@ -92,13 +105,13 @@ $description-background-color: rgba(230, 225, 190, 0.8);
           justify-content: center;
           align-items: center;
           width: 50%;
-          height: 120px;
+          height: 100%;
           h4{
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
           }
           p{
-            font-size: 2.3rem;
+            font-size: 1.4rem;
           }
         }
         .week-end{
@@ -107,13 +120,13 @@ $description-background-color: rgba(230, 225, 190, 0.8);
           justify-content: center;
           align-items: center;
           width: 50%;
-          height: 120px;
+          height: 100%;
           h4{
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
           }
           p{
-            font-size: 2.3rem;
+            font-size: 1.4rem;
           }
         }
       }
@@ -131,26 +144,30 @@ $description-background-color: rgba(230, 225, 190, 0.8);
         }
       }
       .description_container{
+        width: auto;
         padding: 12px;
         p{
-          font-size: 1.6rem;
+          font-size: 1.3rem;
         }
       }
       .horaire_container{
-        .week{
-          h4{
-            font-size: 1.5rem;
+        width: auto;
+        .hours_container{
+          .week{
+            h4{
+              font-size: 1.7rem;
+            }
+            p{
+              font-size: 1.3rem;
+            }
           }
-          p{
-            font-size: 1.3rem;
-          }
-        }
-        .week-end{
-          h4{
-            font-size: 1.5rem;
-          }
-          p{
-            font-size: 1.3rem;
+          .week-end{
+            h4{
+              font-size: 1.7rem;
+            }
+            p{
+              font-size: 1.3rem;
+            }
           }
         }
       }
@@ -167,31 +184,28 @@ $description-background-color: rgba(230, 225, 190, 0.8);
         }
       }
       .description_container{
-        padding: 8px;
+        padding: 10px;
         p{
-          font-size: 1.2rem;
+          font-size: 0.95rem;
         }
       }
       .horaire_container{
-        .title_container{
-          h3{
-            font-size: 1.5rem;
+        .hours_container{
+          .week{
+            h4{
+              font-size: 1.4rem !important;
+            }
+            p{
+              font-size: 1.3rem !important;
+            }
           }
-        }
-        .week{
-          h4{
-            font-size: 1.4rem !important;
-          }
-          p{
-            font-size: 1.3rem !important;
-          }
-        }
-        .week-end{
-          h4{
-            font-size: 1.4rem !important;
-          }
-          p{
-            font-size: 1.3rem !important;
+          .week-end{
+            h4{
+              font-size: 1.4rem;
+            }
+            p{
+              font-size: 1.3rem !important;
+            }
           }
         }
       }

@@ -11,6 +11,9 @@ export default {
   components:{
     NavBar,
     Footer
+  },
+  mounted(){
+    document.title = "Pizzeria Margherita"
   }
 }
 </script>

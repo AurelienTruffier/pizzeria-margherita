@@ -92,7 +92,7 @@ $dessert-name-color: rgb(0, 60, 30);
       height: 100%;
 
       img{
-        width: 85%;
+        width: 320px;
         border-radius: 3px;
         transition: transform 0.1s ease-in-out;
       }
@@ -103,6 +103,18 @@ $dessert-name-color: rgb(0, 60, 30);
     }
   }
 }
+@media (max-width: 1000px){
+  .dessert_card{
+    .dessert_box{
+      .image_container{
+        img{
+          width: 260px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 900px){
   .dessert_card{
     .dessert_box{
@@ -120,6 +132,9 @@ $dessert-name-color: rgb(0, 60, 30);
         }
       }
       .image_container{
+        img{
+          width: 180px;
+        }
         img:hover{
           transform: none;
         }
@@ -127,6 +142,19 @@ $dessert-name-color: rgb(0, 60, 30);
     }
   }
 }
+
+@media (max-width: 800px){
+  .dessert_card{
+    .dessert_box{
+      .image_container{
+        img{
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 600px){
   .dessert_card{
     .dessert_box{
@@ -150,9 +178,20 @@ $dessert-name-color: rgb(0, 60, 30);
       .image_container{
       width: 37%;
       img{
-        width: 95%;
+        width: 130px;
       }
     }
+    }
+  }
+}
+@media (max-width: 360px){
+  .dessert_card{
+    .dessert_box{
+      .image_container{
+        img{
+          width: 112px;
+        }
+      }
     }
   }
 }
